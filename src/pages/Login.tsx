@@ -4,7 +4,7 @@ import Input from "../components/ui/Input";
 import Button from "../components/ui/Button";
 import { cn } from "../lib/utils";
 import { cva } from "class-variance-authority";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useMutation } from "react-query";
 import { toast } from "@/components/ui/use-toast";
 import { ToastAction } from "@radix-ui/react-toast";
@@ -102,6 +102,8 @@ const LoginForm: React.FC<LoginFormProps> = ({ variant }) => {
               Sign In
             </Button>
           </form>
+          <Link to="/signup">
+          <p className="text-primary underline">signup?</p></Link>
           <Toaster />
         </div>
       </div>

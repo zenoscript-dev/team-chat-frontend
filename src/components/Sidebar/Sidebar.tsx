@@ -78,7 +78,7 @@ const Sidebar = () => {
                 <div className="flex flex-1 align-middle justify-center">
                   <img
                     className="block h-20 w-20 rounded-full m-auto object-contain"
-                    src={profile}
+                    src={user.recieverProflePic? `${import.meta.env.VITE_APP_MINIO_STORE}/${user.recieverProflePic}`: profile}
                     alt="candidate-icon"
                   />
                   <div
@@ -86,7 +86,7 @@ const Sidebar = () => {
                     className="flex-1 block text-lg font-medium p-4"
                   >
                     <p className="text-lg overflow-hidden text-nowrap text-ellipsis">
-                      {user.name}
+                      {user.recieverName}
                     </p>
                     <p className="text-base mt-2 text-gray-400 overflow-hidden text-nowrap text-ellipsis">
                       {user.recentMessage.message}

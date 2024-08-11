@@ -4,6 +4,7 @@ import App from "./App";
 import Chat from "./pages/Chat";
 import LoginForm from "./pages/Login";
 import AuthWrapper from "./components/AuthWrapper";
+import SignUp from "./pages/SignUp";
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginForm />,
+  },
+  {
+    path: "/signup",  
+    element: <SignUp />,
   },
 ]);
 
